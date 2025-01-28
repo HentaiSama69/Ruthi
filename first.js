@@ -50,19 +50,19 @@ function closeErrorModal() {
 const loadingMessages = [
   {
     text: "Checking if you're the love of my life...",
-    image: "media'/d99f67ff-1ddd-48fb-9e8e-b07ad8d814e8.jpg",
+    image: "d99f67ff-1ddd-48fb-9e8e-b07ad8d814e8.jpg",
   },
   {
     text: "Verifying your warm hugs and sweet Scent...",
-    image: "media'/love-i-love-you.gif",
+    image: "love-i-love-you.gif",
   },
   {
     text: "Scanning your beautiful smile and loving heart...",
-    image: "media'/scanner-red-light-green-light.gif",
+    image: "scanner-red-light-green-light.gif",
   },
   {
     text: "Successfully verified! You are indeed the Love of my life",
-    image: "media'/I hate myself.jpg",
+    image: "I hate myself.jpg",
   }
 ];
 
