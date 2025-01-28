@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="first.js" defer></script>
+  </head>
+  <body>
+    <div class="sign-in">
+      <div class="div">
+        <header class="frame">
+          <h1 class="text-wrapper">Name Verification Page</h1>
+          <p class="p">Access Restricted: For the One and Only 💕</p>
+        </header>
+        <div class="frame-wrapper">
+          <div class="frame-2"></div>
+        </div>
+        <div class="div-wrapper">
+          <button onclick="verifyName()" class="text-wrapper-2">Submit</button>
+        </div>
+        <div class="overlap-group">
+          <img
+            class="what-was-that-again"
+            src="what was that again.jpg"
+            alt="Decorative Valentine image"
+          />
+          <p class="to-continue-you-must"> 
+            To continue, you must prove you&#39;re the love of my life. Please enter your REAL name
+            below.<br />
+            (Only your name will unlock the magic ahead)
+          </p>
+        </div>
+        <div class="frame-3">
+          <div class="frame-4">
+            <div class="frame-5">
+              
+              <input
+                class="text-wrapper-3"
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name"
+              />
+              <img class="line" src="img/line-2.svg" alt="" />
+              <p id="errorMessag" style="color: red;"></p>
+              <div id="errorModal">
+                <div class="modal-content">
+                  <button class="close-btn" onclick="closeErrorModal()">X</button>
+                  <img src="24922567-17a2-4b69-83ba-525dd3942bf8.jpg" alt="Error Image" />
+                  <p id="errorMessage">Oops! That's not your REAL name, silly. Try again!</p>
+                </div>
+              </div>
+              <div id="loadingPage">
+                <div class="loading-content">
+                  <img id="loadingImage" src="1488.gif" alt="Loading Image" />
+                  <p id="loadingText">Verifying...</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
