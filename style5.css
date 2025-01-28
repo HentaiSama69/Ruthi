@@ -1,0 +1,281 @@
+@import "compass/css3";
+.sign-in {
+  background-color: #3d3b30;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-in .div {
+  background-color: #3d3b30;
+  width: 390px;
+  height: 1144px;
+  position: relative;
+}
+
+.sign-in .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  top: 92px;
+  left: 20px;
+}
+
+.sign-in .text-wrapper {
+  position: relative;
+  width: 313px;
+  height: 28px;
+  margin-top: -1.00px;
+  font-family: "Average-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.sign-in .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+  height: 29px;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 590px;
+  left: 112px;
+}
+
+.sign-in .frame-2 {
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -23.00px;
+  margin-left: -69.50px;
+  margin-right: -69.50px;
+}
+
+.sign-in .overlap-group {
+  position: absolute;
+  width: 363px;
+  height: 314px;
+  top: 161px;
+  left: 16px;
+}
+
+.sign-in .p {
+  position: absolute;
+  width: 340px;
+  top: 0;
+  left: 8px;
+  font-family: "Itim-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+}
+
+.sign-in .img {
+  position: absolute;
+  width: 363px;
+  height: 204px;
+  top: 110px;
+  left: 0;
+}
+
+
+  .sign-in {
+    text-align: center;
+  }
+
+  .text-wrapper {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+    z-index: 10;
+    width: 300px;
+  }
+
+  .popup h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+
+  .popup-buttons .yes-button {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .popup-buttons .yes-button:hover {
+    background-color: #45a049;
+  }
+
+  .popup-buttons .no-button {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .popup-buttons .no-button:hover {
+    background-color: #e53935;
+  }
+
+  /* Overlay for popup background */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 5;
+  }
+
+  /* Confetti */
+  .confetti-piece {
+    position: fixed;
+    background-color: #f39c12;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    from {
+      opacity: 1;
+      transform: translateY(-10px) rotate(0deg);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(100vh) rotate(720deg);
+    }
+  }
+
+  .valentine-img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 300px;
+    height: auto;
+  }
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #f0f0f0;
+  }
+  .confetti-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction */
+    overflow: hidden;
+  }
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-100%) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0.8;
+    }
+  }
+  .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 0px;
+    background: var(--confetti-color, red);
+    opacity: 0.9;
+    animation: confetti-fall var(--fall-duration, 4s) linear infinite;
+  }
+
+ 
+  canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
+
+   /* Valentine Image */
+   .valentine-img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    width: 300px;
+    height: auto;
+  }
+
+  /* Canvas for confetti */
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  

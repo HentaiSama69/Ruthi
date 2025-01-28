@@ -1,0 +1,208 @@
+
+div{
+  width: 100vw;
+  height: 100vh;
+}
+.sign-in {
+  background-color: #3d3b30;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-in .div {
+  background-color: #3d3b30;
+  width: 390px;
+  height: 844px;
+  position: relative;
+}
+
+.sign-in .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  top: 92px;
+  left: 20px;
+}
+
+.sign-in .text-wrapper {
+  position: relative;
+  width: 313px;
+  height: 28px;
+  margin-top: -1.00px;
+  font-family: "Average-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.sign-in .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+  height: 29px;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 590px;
+  left: 112px;
+}
+
+.sign-in .frame-2 {
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -23.00px;
+  margin-left: -69.50px;
+  margin-right: -69.50px;
+}
+
+.sign-in .overlap-group {
+  position: absolute;
+  width: 340px;
+  height: 349px;
+  top: 161px;
+  left: 24px;
+}
+
+.sign-in .look-who-it-is-the {
+  position: absolute;
+  width: 340px;
+  top: 0;
+  left: 0;
+  font-family: "Itim-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+}
+
+.sign-in .buenas-noches {
+  position: absolute;
+  width: 220px;
+  height: 176px;
+  top: 173px;
+  left: 60px;
+  object-fit: cover;
+}
+
+.sign-in .rectangle {
+  position: absolute;
+  width: 246px;
+  height: 55px;
+  top: 535px;
+  left: 71px;
+  background-color: #d9d9d9;
+  border-radius: 44px;
+}
+
+/* Add this below your existing CSS */
+
+/* Style for the button inside the rectangle */
+.rectangle-button {
+    width: 100%; /* Full width of the rectangle */
+    height: 100%; /* Full height of the rectangle */
+    background: transparent; /* Inherit the rectangle's background */
+    border: none; /* Remove default button borders */
+    color: #3d3b30; /* Text color for contrast */
+    font-family: "Itim-Regular", Helvetica, sans-serif; /* Lovely font */
+    font-size: 18px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 44px; /* Match the rectangle's rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+    text-align: center; /* Center the text */
+    line-height: 55px; /* Vertically center the text (match the rectangle's height) */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .rectangle-button:hover {
+    background-color: #a816a1; /* Darker background on hover */
+    color: #d9d9d9; /* Lighter text on hover */
+  }
+  
+
+  /* Default styles (for larger screens like desktops) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for tablets (screen width: 768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 10px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Styles for smartphones (screen width: 480px - 767px) */
+@media (max-width: 767px) {
+  .container {
+    padding: 5px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  h1, p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* Styles for very small devices (screen width: < 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

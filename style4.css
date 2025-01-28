@@ -1,0 +1,280 @@
+.sign-in {
+  background-color: #3d3b30;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-in .div {
+  background-color: #3d3b30;
+  width: 390px;
+  height: 2162px;
+  position: relative;
+}
+
+.sign-in .text-wrapper {
+  position: absolute;
+  width: 342px;
+  top: 30px;
+  left: 27px;
+  font-family: "Average-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.sign-in .p {
+  position: absolute;
+  width: 344px;
+  top: 85px;
+  left: 25px;
+  font-family: "Itim-Regular", Helvetica;
+  font-weight: 400;
+  color: #d2cccc;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+}
+
+.sign-in .element {
+  top: 158px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-a-b {
+  top: 520px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .img {
+  top: 1252px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-2 {
+  top: 882px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-3 {
+  top: 1614px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-4 {
+  top: 343px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-5 {
+  top: 705px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-6 {
+  top: 1437px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-7 {
+  top: 1067px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-8 {
+  top: 1799px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-9 {
+  top: 158px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-10 {
+  top: 520px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-11 {
+  top: 1252px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-12 {
+  top: 882px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .gg{
+  top: 882px;
+  left: 15px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-13 {
+  top: 1614px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-14 {
+  top: 343px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-15 {
+  top: 705px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-16 {
+  top: 1437px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-17 {
+  top: 1067px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .element-18 {
+  top: 1799px;
+  left: 203px;
+  position: absolute;
+  width: 172px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.sign-in .rectangle {
+  position: absolute;
+  width: 193px;
+  height: 60px;
+  top: 1980px;
+  left: 96px;
+  background-color: #d9d9d9;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sign-in .rectangle {
+    position: absolute;
+    width: 246px;
+    height: 55px;
+    top: 2000px;
+    left: 72px;
+    display: flex;
+    align-items: center; /* Vertically center the button */
+    justify-content: center; /* Horizontally center the button */
+    background-color: #ffffff; /* Text color for contrast */
+    ; /* Optional: Add a background color if needed */
+    border-radius: 44px; /* Optional: Rounded corners */
+  }
+  
+  .rectangle-button {
+    width: 100%; /* Button takes up the full width of the rectangle */
+    height: 100%; /* Button takes up the full height of the rectangle */
+    border: none; /* Remove default border */
+    background: none; /* Make background transparent */
+    color: #000000; /* Text color */
+    font-family: "Itim-Regular", Helvetica;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 44px;
+  }
+  
+  .rectangle-button:hover {
+    background-color: #a816a1; /* Darker background on hover */
+    color: #d9d9d9; /* Lighter text on hover */
+  }
+  
+  .rectangle-button:focus-visible {
+    outline: 2px solid #ff0000; /* Optional: Add focus outline */
+  }
+

@@ -1,0 +1,320 @@
+body{
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sign-in {
+    background-color: #3D3B30;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sign-in .div {
+    background-color: #3D3B30;
+    width: 390px;
+    height: 844px;
+    position: relative;
+  }
+  
+  .sign-in .frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 71px;
+    left: 19px;
+  }
+  
+  .sign-in .text-wrapper {
+    position: relative;
+    width: 313px;
+    height: 28px;
+    margin-top: -1.00px;
+    font-family: "Average-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    color: rgb(255, 0, 0);
+  }
+  
+  .sign-in .p {
+    position: relative;
+    width: fit-content;
+    font-family: "ABeeZee-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--grey);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+    color: rgb(210, 204, 204);
+  }
+  
+  .sign-in .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 172px;
+    height: 29px;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 590px;
+    left: 112px;
+  }
+  
+  .sign-in .frame-2 {
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -23.00px;
+    margin-left: -69.50px;
+    margin-right: -69.50px;
+  }
+  
+   .sign-in .div-wrapper { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 135px;
+    position: absolute;
+    top: 538px;
+    left: 68px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0px 40px; /* Increase padding for a bigger button */
+    font-size: 20px; /* Larger text size */
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px #12121229;
+    background: linear-gradient(
+      180deg,
+      rgb(200, 254, 59) 0%,
+      rgb(255, 229, 59) 100%
+    );
+  }
+  
+  .sign-in .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Itim-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    
+    
+  }
+  button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 20px 40px; /* Increase padding for a bigger button */
+  font-size: 20px; /* Larger text size */
+  cursor: pointer;
+  
+  }
+  
+  
+  .sign-in .overlap-group {
+    position: absolute;
+    width: 340px;
+    height: 271px;
+    top: 155px;
+    left: 20px;
+  }
+  
+  .sign-in .what-was-that-again {
+    position: absolute;
+    width: 211px;
+    height: 200px;
+    top: 71px;
+    left: 58px;
+    object-fit: cover;
+  }
+  
+  .sign-in .to-continue-you-must {
+    position: absolute;
+    width: 340px;
+    top: 0;
+    left: 0;
+    font-family: "Itim-Regular", Helvetica;
+    font-weight: 400;
+    color: rgb(210, 204, 204);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+  }
+  
+  .sign-in .frame-3 {
+    display: inline-flex;
+    flex-direction: column;
+    height: 47px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 16px;
+    position: absolute;
+    top: 463px;
+    left: 16px;
+  }
+  
+  .sign-in .frame-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .sign-in .frame-5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .sign-in .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -inherit;
+    top: 50px;
+    font-family: "Calibri-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--grey);
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 23.8px;
+    white-space: nowrap;
+    margin-left: 55px;
+  }
+  
+  .sign-in .line {
+    position: relative;
+    width: 349px;
+    height: 1px;
+    margin-bottom: -0.50px;
+    margin-left: -0.50px;
+    margin-right: -0.50px;
+    object-fit: cover;
+  }
+
+  /* Styles for the Error Popup Modal */
+#errorModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed at the center */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it sits on top of everything */
+}
+
+/* Modal content (image and message) */
+#errorModal .modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  max-width: 90%;
+  position: relative;
+}
+
+#errorModal .modal-content img {
+  width: 100px; /* Set image size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#errorModal .modal-content p {
+  font-family: "Itim-Regular", Helvetica;
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Close button (X) */
+#errorModal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#errorModal .close-btn:hover {
+  color: red; /* Change color on hover */
+}
+
+
+/* Loading Page Styles */
+#loadingPage {
+  display: none; /* Hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#loadingPage .loading-content {
+  text-align: center;
+}
+
+#loadingPage img {
+  width: 150px; /* Size of the images */
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out; /* Smooth appearance */
+}
+
+#loadingPage p {
+  font-family: "Itim-Regular", Helvetica;
+  font-size: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3), 
+       only screen and (-min--moz-device-pixel-ratio: 3), 
+       only screen and (-o-min-device-pixel-ratio: 3/1), 
+       only screen and (min-device-pixel-ratio: 3)
+{ /* Your Styles... */ }
